@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- -----------log in starts--------------- -->
+
+    <div class="full-wrapper">
+        <div class="container logo">
+            <div class="img">
+                <img src="images/facebook.png">
+            </div>
+        </div>
+        <div class="container">
+            <div class="form">
+                <form>
+                    <div class="user">
+                        <input id="email" type="email" placeholder="Email address">
+                        <small id="emailerror"></small>
+                    </div>
+                    <div class="user">
+                        <input id="password" type="Password" placeholder="Password">
+                        <small id="passerror"></small>
+                    </div>
+                    <div class="user">
+                        <button id="login" class="mrt20" type="submit" onclick="return call();">log in</button>
+                    </div>
+                </form>
+                <div class="user">
+                    <a href="#">Forgotton password?</a>
+                </div>
+                <span class="hr"></span>
+                <button type="button" id="trigger" onclick="trigger();">create new account</button>
+            </div>
+            <p class="details"><a href="#" class="page">Create a Page</a> for a celebrity, band or business.</p>
+        </div>    
+    </div>
+
+    <!-- -----------log in end--------------- -->
+    
+    <!-- -----------sign up starts--------------- -->
+
+    <div id="create">
+        <div class="signup">
+            <div class="heading">
+                <h2>Sign Up</h2>
+                <p>It's quick and easy.</p>
+                <span id="back" onclick="cross();">&times</span>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="name">
+                        <div class="username">
+                            <input id="firstname" type="text" placeholder="First name">
+                            <small id="firsterr"></small>
+                        </div>
+                        <div class="username">
+                            <input id="surname" type="text" placeholder="Surname">
+                            <small id="surerr"></small>
+                        </div>
+                    </div>
+                    <div class="inputgroup">
+                        <input id="mail" class="input" type="email" placeholder="Email">
+                        <small id="mailerr"></small>
+                    </div>
+                    <div class="inputgroup">
+                        <input id="pass" class="input" type="password" placeholder="New password">
+                        <small id="passerr"></small>
+                    </div>
+                    <div class="inputgroup">
+                        <input id="confirmpass" class="input" type="password" placeholder="Confirm password">
+                        <small id="confirmerr"></small>
+                    </div>
+                    <div class="inputgroup">
+                        <label class="birth">Date of birth<i class="fas fa-question-circle"></i></label>
+                        <select>
+                            <option>Date</option>
+
+                            <script>
+                                for(date=1;date<=31;date++){
+                                    document.write("<option>"+date+"</option>");
+                                }
+                            </script>
+                        </select>
+                        <select>
+                            <option>Month</option>
+
+
+                            <script>
+                                var month=['January','February','march','april','May','June','july','August','September','October','November','December'];
+                                var length=month.length;
+                                var lastIndex=length-1;
+                                for(i=0;i<=lastIndex;i++){
+                                    document.write("<option>"+month[i]+"</option>");
+                                }
+                            </script>
+                        </select>
+                        <select>
+                            <option>Year</option>
+
+                            <script>
+                                for(year=2021;year>=1905;year--){
+                                    document.write("<option>"+year+"</option>");
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <div class="inputgroup">
+                        <label class="birth" >Gender<i class="fas fa-question-circle"></i></label>
+
+                        <div class="radiocontent mr5">
+                            <label class="gendername">Female
+                                <input class="radio" type="radio" name="gender" >
+                            </label>
+                        </div>    
+                        <div class="radiocontent mr5">
+                            <label class="gendername">Male
+                                <input class="radio" type="radio" name="gender" >
+                            </label>
+                        </div>
+                        <div class="radiocontent">
+                            <label class="gendername">Custom
+                                <input class="radio" type="radio" name="gender" >
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="policy_details">
+                        <p class="data_policy">By clicking Sign Up, you agree to our <a href="#">Terms, Data Policy and Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+                    <button type="submit" id="signup" onclick="return enter();">sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------sign up end----------------------- -->
+
+<script src="js/custom.js"></script>
+</body>
+</html>

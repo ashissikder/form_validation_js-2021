@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+.mrt20{
+    margin: 20px 0;
+}
+.mr5{
+    margin-right:5px;
+}
+:root{
+    --font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* =====================
+common css end 
+========================*/
+.full-wrapper{
+    width: 100%;
+    height: 100vh;
+    background:#f0f2f5 ;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.full-wrapper .container{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.full-wrapper .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-wrapper .container .img{
+    width:380px;
+    height:135px;
+}
+.full-wrapper .container .img img{
+    width: 100%;
+}
+.full-wrapper .container .form{
+    width: 100%;
+    height: 440px;
+    background-color: #ffffff;
+    text-align: center;
+    padding:15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0,.5);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.full-wrapper .container .form .user{
+    width: 470px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.full-wrapper .container .form .user input{
+    width: 100%;
+    height:40px;
+    font-family: inherit;
+    font-size: 17px;
+    outline-color: rgba(23, 114, 234,.4);
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #dfe1e4;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+.full-wrapper .container .form .user small{
+    width: 100%;
+    height:20px ;
+    padding:0px 15px;
+    box-sizing: border-box;
+    color: #d22222;
+
+}
+.full-wrapper .container .form .user #login{
+    width: 100%;
+    line-height: 40px;
+    cursor: pointer;
+    color: #daffff;
+    background:#1877f2 ;
+    text-transform:capitalize;
+    font-family:'Rubik', sans-serif ;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.full-wrapper .container .form .user a{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: #1877f2;
+}
+.full-wrapper .container .form .user a:hover{
+    text-decoration: underline;
+}
+.full-wrapper .container .form .hr{
+    display:inline-block;
+    width: 100%;
+    height: 1px;
+    background:#dadde1 ;
+    margin:10px 0px;
+}
+.full-wrapper .container .form #trigger{
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color:#ffffff ;
+    padding:15px 20px;
+    background:#42b72a ;
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.full-wrapper .container .details{
+    font-family: 'Rubik', sans-serif;
+    color:#4c574a ;
+    margin-top: 20px;
+}
+.full-wrapper .container .page{
+    color: #1c1e21;
+    font-weight: 700;
+}
+/* ===================
+login page css end
+===================== */
+#create{
+    width: 100%;
+    height: 100vh;
+    background:rgba(252, 252, 253,.8);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+#create .signup{
+    width: 540px;
+    height: 620px;
+    background: #ffffff;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0,.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#create .signup .heading{
+    width: 100%;
+    height: 80px;
+    padding:10px 15px;
+    border-bottom: 1px solid #dadde1;
+    box-sizing: border-box;
+    position: relative;
+}
+#create .signup .heading h2{
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #1c1e21;
+}
+#create .signup .heading p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #606770;
+}
+#create .signup .heading #back{
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #606770;
+    cursor: pointer;
+}
+#create .signup .form{
+    width: 100%;
+    height:540px;
+    padding: 15px 10px 20px 10px ;
+    box-sizing: border-box;
+}
+#create .signup .form .name{
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content:space-between;
+}
+#create .signup .form .name .username{
+    width: 245px;
+    overflow: hidden;
+}
+#create .signup .form .name .username input{
+    width:100%;
+    height:40px;
+    background: #f5f6f7;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 10px;
+    border:1px solid #ccd0d5;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+#create .signup .form .name .username small{
+    width:100%;
+    height: 20px;
+    color: #d22222;
+    font-size: 14px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+#create .signup .form .inputgroup{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#create .signup .form .inputgroup .input{
+    width:100%;
+    height:40px;
+    background: #f5f6f7;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 10px;
+    border:1px solid #ccd0d5;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+#create .signup .form .inputgroup small{
+    width:100%;
+    height: 20px;
+    color: #d22222;
+    font-size: 14px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+#create .signup .form .inputgroup .birth{
+    display: block;
+    color:#737981 ;
+}
+#create .signup .form .inputgroup .birth i{
+    color:#666d75
+}
+#create .signup .form .inputgroup select{
+    width:170px;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+#create .signup .form .inputgroup .radiocontent{
+    width: 170px;
+    line-height: 40px;
+    background:#ffffff ;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+    float: left;
+}
+#create .signup .form .inputgroup .radiocontent .radio{
+    display:inline-block;
+    position: absolute;
+    top:15px;
+    right: 10px;
+    width: 14px;
+
+}
+#create .signup .form .policy_details{
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+}
+#create .signup .form .policy_details .data_policy{
+    font-family: inherit;
+    font-size: 15px;
+    color:#a5a5a5 ;
+    word-spacing: 1px;
+    line-height: 18px;
+}
+#create .signup .form .inputgroup .data_policy a{
+    color: #5672a8;
+}
+#create .signup .form #signup{
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color:#ffffff ;
+    padding:8px 60px;
+    margin-top: 15px;
+    margin-left: 170px;
+    background:#00a400;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+/* ==================
+sign up css end
+====================== */
